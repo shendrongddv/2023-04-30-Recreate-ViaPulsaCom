@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
 * {
   font-family: "Roboto", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply min-h-full overflow-x-hidden bg-[#FAFBFC];
+  }
+
+  .btn {
+    @apply flex inline-flex items-center justify-center rounded-full px-8 py-4 font-bold tracking-wide shadow-sm transition hover:shadow-md;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-b from-[#EB9821] to-[#D98425] text-white;
+  }
 }
