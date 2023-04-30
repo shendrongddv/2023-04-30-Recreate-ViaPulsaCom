@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12">
+    <div className="mx-auto max-w-6xl px-4 py-12">
       <div className="flex flex-col-reverse items-center justify-center gap-8 md:flex-row md:items-center md:justify-between">
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-[32px] font-bold leading-tight text-[#333333] md:text-[56px]">

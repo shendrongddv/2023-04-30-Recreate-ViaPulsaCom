@@ -8,7 +8,11 @@
 
 @layer base {
   body {
-    @apply min-h-full overflow-x-hidden bg-[#FAFBFC];
+    @apply min-h-full overflow-x-hidden bg-[#FAFBFC] text-base md:text-lg;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl;
   }
 
   .btn {
