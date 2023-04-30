@@ -20,16 +20,16 @@ const Introduction = () => {
             <p className="md:text-start">
               Download di Google Play Store atau Apple App Store
             </p>
-            <div className="flex items-center justify-start gap-4">
+            <div className="flex items-center justify-start gap-2 md:gap-4">
               <Link
                 to={"#"}
-                className="rounded-full transition hover:shadow-md"
+                className="rounded-md bg-black p-[1px] transition hover:shadow-md"
               >
                 <img className="h-10 w-auto" src={playStore} alt="" />
               </Link>
               <Link
                 to={"#"}
-                className="rounded-full transition hover:shadow-md"
+                className="rounded-md bg-black p-[2px] transition hover:shadow-md"
               >
                 <img className="h-10 w-auto" src={appleStore} alt="" />
               </Link>
