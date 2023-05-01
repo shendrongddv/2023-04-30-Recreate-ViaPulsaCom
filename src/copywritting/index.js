@@ -17,6 +17,11 @@ import idx from "../assets/client/idx-x.png";
 import glints from "../assets/client/glints-x.png";
 import kompas from "../assets/client/kompas-x.png";
 import pewartaIndonesia from "../assets/client/pewarta-indonesia-x.png";
+// ISP
+import telkomsel from "../assets/isp/telkomsel.png";
+import xl from "../assets/isp/xl.png";
+import indosat from "../assets/isp/indosat.png";
+import three from "../assets/isp/three.png";
 
 export const whyChooseUs = [
   {
@@ -161,5 +166,36 @@ export const FAQ = [
     id: "1",
     q: "Apa Itu Rate Convert Pulsa?",
     a: "",
+  },
+];
+
+export const rateConvert = [
+  {
+    id: "1",
+    title: "Telkomsel",
+    text: "30rb - dst",
+    rate: "0.75",
+    image: telkomsel,
+  },
+  {
+    id: "2",
+    title: "XL",
+    text: "30rb - dst",
+    rate: "0.76",
+    image: xl,
+  },
+  {
+    id: "3",
+    title: "Indosat",
+    text: "30rb - 1jt",
+    rate: "0.77",
+    image: indosat,
+  },
+  {
+    id: "4",
+    title: "Three",
+    text: "30rb - dst",
+    rate: "0.80",
+    image: three,
   },
 ];
