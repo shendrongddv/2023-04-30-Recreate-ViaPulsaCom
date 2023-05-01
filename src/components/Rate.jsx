@@ -23,7 +23,7 @@ const Rate = () => {
                 </span>
                 <img src={item.image} alt={item.title} className="h-8" />
               </div>
-              <div className="pl-4 text-2xl font-bold md:text-4xl">
+              <div className="pl-4 text-2xl font-bold text-[#666666] md:text-4xl">
                 {item.rate}
               </div>
             </div>
