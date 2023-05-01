@@ -41,7 +41,7 @@ const Tutorial = () => {
                 key={payment.id}
                 src={payment.image}
                 alt={payment.title}
-                className="h-10 rounded-md p-1 transition hover:bg-neutral-100 hover:shadow-lg md:h-14 md:p-2"
+                className="h-10 rounded-md p-2 transition hover:bg-neutral-100 hover:shadow-lg md:h-14 md:p-2"
               />
             ))}
           </div>
