@@ -12,6 +12,11 @@ import bri from "../assets/payment-provider/bri.png";
 import bni from "../assets/payment-provider/bni.png";
 import mandiri from "../assets/payment-provider/mandiri.png";
 import linkAja from "../assets/payment-provider/link-aja.png";
+// Clients
+import idx from "../assets/client/idx-x.png";
+import glints from "../assets/client/glints-x.png";
+import kompas from "../assets/client/kompas-x.png";
+import pewartaIndonesia from "../assets/client/pewarta-indonesia-x.png";
 
 export const whyChooseUs = [
   {
@@ -120,6 +125,29 @@ export const paymentProvider = [
     id: "9",
     title: "LinkAja",
     image: linkAja,
+  },
+];
+
+export const ourClients = [
+  {
+    id: "1",
+    title: "Bursa Efek Indonesia",
+    image: idx,
+  },
+  {
+    id: "2",
+    title: "Pewarta Indonesia",
+    image: pewartaIndonesia,
+  },
+  {
+    id: "3",
+    title: "Glints",
+    image: glints,
+  },
+  {
+    id: "4",
+    title: "Kompas",
+    image: kompas,
   },
 ];
 
