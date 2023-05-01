@@ -30,6 +30,41 @@ export const whyChooseUs = [
   },
 ];
 
+export const tutorialConvert = [
+  {
+    id: "1",
+    text: "Install aplikasi Viapulsa di Smartphone kamu.",
+  },
+  {
+    id: "2",
+    text: "Login dengan akun google-mu dengan sekali tap tanpa isi form.",
+  },
+  {
+    id: "3",
+    text: "Pilih provider-mu yang ada di aplikasi, kemudian masukan besaran nominal, nomor handphone dan nomor rekening/eWallet-mu (Dana, Ovo, Shopeepay, Gopay atau LinkAja).",
+  },
+  {
+    id: "4",
+    text: "Pastikan seluruh data yang kamu isi sudah benar, kemudian klik lanjut.",
+  },
+  {
+    id: "5",
+    text: "Lakukan transfer pulsa Hanya ke nomor yang diberikan oleh aplikasi Viapulsa.",
+  },
+  {
+    id: "6",
+    text: "Upload bukti transfer pulsa dengan cara klik panel ‘Lampirkan” (pastikan bukti yang kamu lampirkan sudah benar, kemudian klik Upload)",
+  },
+  {
+    id: "7",
+    text: "Tunggu bebebapa menit uang/saldo ewallet akan kamu terima.",
+  },
+  {
+    id: "8",
+    text: "Selesai!",
+  },
+];
+
 export const FAQ = [
   {
     id: "1",
