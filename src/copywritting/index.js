@@ -2,6 +2,16 @@ import whyUsImg1 from "../assets/why-us/1.webp";
 import whyUsImg2 from "../assets/why-us/2.webp";
 import whyUsImg3 from "../assets/why-us/3.webp";
 import whyUsImg4 from "../assets/why-us/4.webp";
+// Payment Provider Image
+import dana from "../assets/payment-provider/dana.png";
+import ovo from "../assets/payment-provider/ovo.png";
+import gopay from "../assets/payment-provider/gopay-horizontal.png";
+import shopeePay from "../assets/payment-provider/shopee-pay.png";
+import bca from "../assets/payment-provider/bca.png";
+import bri from "../assets/payment-provider/bri.png";
+import bni from "../assets/payment-provider/bni.png";
+import mandiri from "../assets/payment-provider/mandiri.png";
+import linkAja from "../assets/payment-provider/link-aja.png";
 
 export const whyChooseUs = [
   {
@@ -62,6 +72,54 @@ export const tutorialConvert = [
   {
     id: "8",
     text: "Selesai!",
+  },
+];
+
+export const paymentProvider = [
+  {
+    id: "1",
+    title: "Dana",
+    image: dana,
+  },
+  {
+    id: "2",
+    title: "OVO",
+    image: ovo,
+  },
+  {
+    id: "3",
+    title: "Gopay",
+    image: gopay,
+  },
+  {
+    id: "4",
+    title: "ShopeePay",
+    image: shopeePay,
+  },
+  {
+    id: "5",
+    title: "BCA",
+    image: bca,
+  },
+  {
+    id: "6",
+    title: "BRI",
+    image: bri,
+  },
+  {
+    id: "7",
+    title: "BNI",
+    image: bni,
+  },
+  {
+    id: "8",
+    title: "Mandiri",
+    image: mandiri,
+  },
+  {
+    id: "9",
+    title: "LinkAja",
+    image: linkAja,
   },
 ];
 

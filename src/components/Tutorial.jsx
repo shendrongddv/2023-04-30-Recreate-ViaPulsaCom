@@ -1,4 +1,4 @@
-import { tutorialConvert } from "../copywritting";
+import { tutorialConvert, paymentProvider } from "../copywritting";
 
 import img1 from "../assets/section/section-tutorial-Img.png";
 
@@ -6,7 +6,7 @@ const Tutorial = () => {
   const copywritting = tutorialConvert;
 
   return (
-    <div className="bg-[#2E343A] px-6 py-20 md:py-32">
+    <div className="bg-[#2E343A] px-6 py-20 md:py-28">
       <div className="mx-auto flex max-w-6xl flex-col items-center space-y-20 text-white">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="flex w-full justify-center md:w-3/12">
@@ -35,6 +35,16 @@ const Tutorial = () => {
             Viapulsa menyediakan berbagai macam metode pembayaran baik melalui
             Bank ataupun eWallet.
           </p>
+          <div className="flex w-full flex-wrap items-center justify-center gap-2 rounded-lg bg-white p-4 shadow-lg md:w-3/4 md:gap-6 md:p-6">
+            {paymentProvider?.map((payment) => (
+              <img
+                key={payment.id}
+                src={payment.image}
+                alt={payment.title}
+                className="h-10 rounded-md p-1 transition hover:bg-neutral-100 hover:shadow-lg md:h-14 md:p-2"
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
