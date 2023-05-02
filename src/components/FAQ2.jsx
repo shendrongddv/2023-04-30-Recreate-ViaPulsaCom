@@ -23,7 +23,7 @@
 
 // export default Accordion;
 
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, Transition } from "@headlessui/react";
 import { FiChevronDown } from "react-icons/fi";
 import { FAQ } from "../copywritting/index";
 
@@ -62,9 +62,19 @@ const FAQ2 = () => {
                         </span>
                       </Disclosure.Button>
                     </dt>
-                    <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                      <p className="text-base text-gray-500">{faq.answer}</p>
-                    </Disclosure.Panel>
+                    <Transition
+                      show={open}
+                      enter="transition duration-100 ease-out"
+                      enterFrom="transform scale-95 opacity-0"
+                      enterTo="transform scale-100 opacity-100"
+                      leave="transition duration-75 ease-out"
+                      leaveFrom="transform scale-100 opacity-100"
+                      leaveTo="transform scale-95 opacity-0"
+                    >
+                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
+                        <p className="text-base text-gray-500">{faq.answer}</p>
+                      </Disclosure.Panel>
+                    </Transition>
                   </>
                 )}
               </Disclosure>
