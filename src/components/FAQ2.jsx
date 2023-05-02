@@ -23,7 +23,6 @@
 
 // export default Accordion;
 
-/* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from "@headlessui/react";
 import { FiChevronDown } from "react-icons/fi";
 import { FAQ } from "../copywritting/index";
@@ -34,7 +33,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Accordion() {
+const FAQ2 = () => {
   return (
     <div className="bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
@@ -75,4 +74,5 @@ export default function Accordion() {
       </div>
     </div>
   );
-}
+};
+export default FAQ2;
