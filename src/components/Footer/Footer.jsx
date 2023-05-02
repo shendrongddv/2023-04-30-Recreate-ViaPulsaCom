@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 
 import { usefulLink, tutorialConvertLink } from "../../copywritting";
 
+import Logo from "../../assets/viapulsa-logo.png";
+
 import {
   FaLinkedinIn,
   FaFacebookF,
@@ -10,18 +12,30 @@ import {
   FaGooglePlay,
   FaApple,
   FaWhatsapp,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Footer = () => {
   return (
     <div className="bg-neutral-100 px-6 pt-20 md:pt-28">
       <div className="mx-auto max-w-6xl space-y-10">
+        {/* 
+          Footer Main
+        */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="border">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
-            optio atque blanditiis omnis hic voluptates voluptatum dolor porro
-            ducimus libero. Dicta voluptates facere deserunt.
+          <div className="flex flex-col space-y-4">
+            <Link to="/">
+              <img src={Logo} alt="Viapulsa" className="h-14" />
+            </Link>
+            <div className="flex gap-1 text-neutral-500">
+              <FaMapMarkerAlt className="mt-[3px] flex-none text-[#F98127]" />
+              <address className="not-italic">
+                Jl. Semeru No. 4, Pangongangan, Kec. Manguharjo, Kota Madiun,
+                Jawa Timur 63121
+              </address>
+            </div>
           </div>
           <div className="flex flex-col space-y-4">
             <h3 className="text-2xl font-bold text-[#F98127]">
@@ -29,13 +43,12 @@ const Footer = () => {
             </h3>
             <ul className="flex flex-col space-y-2">
               {usefulLink.map((item) => (
-                <li key={item.index}>
-                  <Link
-                    to={item.url}
-                    className="text-neutral-500 hover:text-neutral-900"
-                  >
-                    {item.title}
-                  </Link>
+                <li
+                  key={item.index}
+                  className="flex items-center gap-1 text-neutral-500 hover:text-neutral-900"
+                >
+                  <MdKeyboardArrowRight className="text-[#F98127]" />
+                  <Link to={item.url}>{item.title}</Link>
                 </li>
               ))}
             </ul>
@@ -44,13 +57,12 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-[#F98127]">Panduan</h3>
             <ul className="flex flex-col space-y-2">
               {tutorialConvertLink.map((item) => (
-                <li key={item.index}>
-                  <Link
-                    to={item.url}
-                    className="text-neutral-500 hover:text-neutral-900"
-                  >
-                    {item.title}
-                  </Link>
+                <li
+                  key={item.index}
+                  className="flex items-center gap-1 text-neutral-500 hover:text-neutral-900"
+                >
+                  <MdKeyboardArrowRight className="text-[#F98127]" />
+                  <Link to={item.url}>{item.title}</Link>
                 </li>
               ))}
             </ul>
@@ -61,7 +73,9 @@ const Footer = () => {
             </h3>
             <div className="flex flex-wrap items-center justify-between gap-2">
               <Link
-                to="/"
+                to="https://apps.apple.com/id/app/viapulsa/id1605901459?l=id&platform=iphone"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
               >
                 <FaApple className="h-8 w-8" />
@@ -73,7 +87,9 @@ const Footer = () => {
                 </div>
               </Link>
               <Link
-                to="/"
+                to="https://play.google.com/store/apps/details?id=com.viapulsa.app&hl=in&gl=US&pli=1"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
               >
                 <FaGooglePlay className="h-8 w-8" />
@@ -85,7 +101,9 @@ const Footer = () => {
                 </div>
               </Link>
               <Link
-                to="/"
+                to="https://viapulsa.whasap.me/convertpulsa"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
               >
                 <FaWhatsapp className="h-8 w-8" />
@@ -99,6 +117,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        {/* 
+          Footer Bottom
+        */}
         <div className="flex flex-col-reverse items-center gap-8 border-t py-8 md:flex-row md:items-center md:justify-between">
           <span className="text-center text-sm text-neutral-500 md:text-start md:text-base">
             Copyright &copy; 2022 –{" "}
