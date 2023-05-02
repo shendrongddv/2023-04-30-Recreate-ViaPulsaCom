@@ -2,7 +2,15 @@ import { Link } from "react-router-dom";
 
 import { usefulLink, tutorialConvertLink } from "../../copywritting";
 
-import { FaLinkedinIn, FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaFacebookF,
+  FaTiktok,
+  FaYoutube,
+  FaGooglePlay,
+  FaApple,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 
 const Footer = () => {
@@ -51,10 +59,43 @@ const Footer = () => {
             <h3 className="text-2xl font-bold text-[#F98127]">
               Download Aplikasi
             </h3>
-            <div>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Quibusdam optio atque blanditiis omnis hic voluptates voluptatum
-              dolor porro ducimus libero. Dicta voluptates facere deserunt.
+            <div className="flex flex-wrap items-center justify-between gap-2">
+              <Link
+                to="/"
+                className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
+              >
+                <FaApple className="h-8 w-8" />
+                <div className="flex flex-col items-start justify-center text-lg font-bold leading-tight">
+                  <span className="text-xs font-normal leading-none opacity-95">
+                    Download on the
+                  </span>
+                  Apple Store
+                </div>
+              </Link>
+              <Link
+                to="/"
+                className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
+              >
+                <FaGooglePlay className="h-8 w-8" />
+                <div className="flex flex-col items-start justify-center text-lg font-bold leading-tight">
+                  <span className="text-xs font-normal leading-none opacity-95">
+                    Get it on
+                  </span>
+                  Google Play
+                </div>
+              </Link>
+              <Link
+                to="/"
+                className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
+              >
+                <FaWhatsapp className="h-8 w-8" />
+                <div className="flex flex-col items-start justify-center text-lg font-bold leading-tight">
+                  <span className="text-xs font-normal leading-none opacity-95">
+                    Chat via
+                  </span>
+                  WhatsApp
+                </div>
+              </Link>
             </div>
           </div>
         </div>
