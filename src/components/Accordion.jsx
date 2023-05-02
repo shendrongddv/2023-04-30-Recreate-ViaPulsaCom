@@ -26,7 +26,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Disclosure } from "@headlessui/react";
 import { FiChevronDown } from "react-icons/fi";
-import { FAQ } from "../../copywritting/index";
+import { FAQ } from "../copywritting/index";
 
 const faqs = FAQ;
 

@@ -7,7 +7,7 @@ import Tutorial from "./components/Tutorial";
 import CTA from "./components/CTA";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer/Footer";
-import Accordion from "./components/test/accordion";
+import Accordion from "./components/Accordion";
 
 const App = () => {
   return (
