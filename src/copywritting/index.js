@@ -41,23 +41,23 @@ export const usefulLink = [
 
 export const tutorialConvertLink = [
   {
-    title: "Convert Pulsa ke DANA",
+    title: "Pulsa ke DANA",
     url: "/",
   },
   {
-    title: "Convert Pulsa ke OVO",
+    title: "Pulsa ke OVO",
     url: "/",
   },
   {
-    title: "Convert Pulsa ke GoPay",
+    title: "Pulsa ke GoPay",
     url: "/",
   },
   {
-    title: "Convert Pulsa ke ShopeePay",
+    title: "Pulsa ke ShopeePay",
     url: "/",
   },
   {
-    title: "Convert Pulsa ke LinkAja",
+    title: "Pulsa ke LinkAja",
     url: "/",
   },
 ];

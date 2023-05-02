@@ -24,96 +24,110 @@ const Footer = () => {
         {/* 
           Footer Main
         */}
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          <div className="flex flex-col space-y-4">
-            <Link to="/">
-              <img src={Logo} alt="Viapulsa" className="h-14" />
-            </Link>
-            <div className="flex gap-1 text-neutral-500">
-              <FaMapMarkerAlt className="mt-[3px] flex-none text-[#F98127]" />
-              <address className="not-italic">
-                Jl. Semeru No. 4, Pangongangan, Kec. Manguharjo, Kota Madiun,
-                Jawa Timur 63121
-              </address>
+        {/* <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"> */}
+        <div className="flex flex-col justify-between gap-8 md:flex-row">
+          <div className="w-full md:max-w-max">
+            <div className="flex flex-col space-y-4 text-center md:text-start">
+              <Link to="/">
+                <img
+                  src={Logo}
+                  alt="Viapulsa"
+                  className="mx-auto h-14 md:mx-0"
+                />
+              </Link>
+              <div className="flex gap-1 text-neutral-500">
+                <address className="not-italic">
+                  Jl. Semeru No. 4, Pangongangan, Kec. Manguharjo, Kota Madiun,
+                  Jawa Timur 63121
+                </address>
+              </div>
             </div>
           </div>
-          <div className="flex flex-col space-y-4">
-            <h3 className="text-2xl font-bold text-[#F98127]">
-              Tentang Viapulsa
-            </h3>
-            <ul className="flex flex-col space-y-2">
-              {usefulLink.map((item) => (
-                <li
-                  key={item.index}
-                  className="flex items-center gap-1 text-neutral-500 hover:text-neutral-900"
-                >
-                  <MdKeyboardArrowRight className="text-[#F98127]" />
-                  <Link to={item.url}>{item.title}</Link>
-                </li>
-              ))}
-            </ul>
+          <div className="w-full md:max-w-max">
+            <div className="flex flex-col space-y-4">
+              <h3 className="text-center text-2xl font-bold text-[#F98127] md:text-start">
+                Tentang Viapulsa
+              </h3>
+              <ul className="grid grid-cols-2 gap-2 md:grid-cols-1">
+                {usefulLink.map((item) => (
+                  <li
+                    key={item.index}
+                    className="flex items-center gap-1 text-neutral-500 hover:text-neutral-900"
+                  >
+                    <MdKeyboardArrowRight className="text-[#F98127]" />
+                    <Link to={item.url}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="flex flex-col space-y-4">
-            <h3 className="text-2xl font-bold text-[#F98127]">Panduan</h3>
-            <ul className="flex flex-col space-y-2">
-              {tutorialConvertLink.map((item) => (
-                <li
-                  key={item.index}
-                  className="flex items-center gap-1 text-neutral-500 hover:text-neutral-900"
-                >
-                  <MdKeyboardArrowRight className="text-[#F98127]" />
-                  <Link to={item.url}>{item.title}</Link>
-                </li>
-              ))}
-            </ul>
+          <div className="w-full md:max-w-max">
+            <div className="flex flex-col space-y-4">
+              <h3 className="text-center text-2xl font-bold text-[#F98127] md:text-start">
+                Panduan Convert
+              </h3>
+              <ul className="grid grid-cols-2 gap-2 md:grid-cols-1">
+                {tutorialConvertLink.map((item) => (
+                  <li
+                    key={item.index}
+                    className="flex items-center gap-1 text-neutral-500 hover:text-neutral-900"
+                  >
+                    <MdKeyboardArrowRight className="text-[#F98127]" />
+                    <Link to={item.url}>{item.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="flex flex-col space-y-4">
-            <h3 className="text-2xl font-bold text-[#F98127]">
-              Download Aplikasi
-            </h3>
-            <div className="flex flex-wrap items-center justify-between gap-2">
-              <Link
-                to="https://apps.apple.com/id/app/viapulsa/id1605901459?l=id&platform=iphone"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
-              >
-                <FaApple className="h-8 w-8" />
-                <div className="flex flex-col items-start justify-center text-lg font-bold leading-tight">
-                  <span className="text-xs font-normal leading-none opacity-95">
-                    Download on the
-                  </span>
-                  Apple Store
-                </div>
-              </Link>
-              <Link
-                to="https://play.google.com/store/apps/details?id=com.viapulsa.app&hl=in&gl=US&pli=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
-              >
-                <FaGooglePlay className="h-8 w-8" />
-                <div className="flex flex-col items-start justify-center text-lg font-bold leading-tight">
-                  <span className="text-xs font-normal leading-none opacity-95">
-                    Get it on
-                  </span>
-                  Google Play
-                </div>
-              </Link>
-              <Link
-                to="https://viapulsa.whasap.me/convertpulsa"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
-              >
-                <FaWhatsapp className="h-8 w-8" />
-                <div className="flex flex-col items-start justify-center text-lg font-bold leading-tight">
-                  <span className="text-xs font-normal leading-none opacity-95">
-                    Chat via
-                  </span>
-                  WhatsApp
-                </div>
-              </Link>
+          <div className="w-full md:max-w-max">
+            <div className="flex flex-col space-y-4">
+              <h3 className="text-center text-2xl font-bold text-[#F98127] md:text-start">
+                Download Aplikasi
+              </h3>
+              <div className="flex items-center justify-between gap-2">
+                <Link
+                  to="https://apps.apple.com/id/app/viapulsa/id1605901459?l=id&platform=iphone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
+                >
+                  <FaApple className="h-8 w-8" />
+                  <div className="flex flex-col items-start justify-center text-lg font-bold leading-tight">
+                    <span className="text-xs font-normal leading-none opacity-95">
+                      Download on the
+                    </span>
+                    Apple Store
+                  </div>
+                </Link>
+                <Link
+                  to="https://play.google.com/store/apps/details?id=com.viapulsa.app&hl=in&gl=US&pli=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
+                >
+                  <FaGooglePlay className="h-8 w-8" />
+                  <div className="flex flex-col items-start justify-center text-lg font-bold leading-tight">
+                    <span className="text-xs font-normal leading-none opacity-95">
+                      Get it on
+                    </span>
+                    Google Play
+                  </div>
+                </Link>
+                {/* <Link
+                  to="https://viapulsa.whasap.me/convertpulsa"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex min-w-fit flex-1 items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-white"
+                >
+                  <FaWhatsapp className="h-8 w-8" />
+                  <div className="flex flex-col items-start justify-center text-lg font-bold leading-tight">
+                    <span className="text-xs font-normal leading-none opacity-95">
+                      Chat via
+                    </span>
+                    WhatsApp
+                  </div>
+                </Link> */}
+              </div>
             </div>
           </div>
         </div>
