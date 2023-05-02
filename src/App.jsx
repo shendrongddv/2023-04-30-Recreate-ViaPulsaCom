@@ -7,6 +7,7 @@ import Tutorial from "./components/Tutorial";
 import CTA from "./components/CTA";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer/Footer";
+import Accordion from "./components/test/accordion";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Tutorial />
       <CTA />
       <FAQ />
+      <Accordion />
       <Footer />
     </>
   );

@@ -225,14 +225,34 @@ export const ourClients = [
 
 export const FAQ = [
   {
-    id: "1",
-    q: "Apa Itu Convert Pulsa?",
-    a: "Convert pulsa adalah cara menukar sejumlah pulsa menjadi uang/saldo e-wallet dengan rate yang tersedia di perusahaan layanan tukar pulsa.",
+    question: "Frequently asked questions 1",
+    answer:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem eaque totam natus excepturi repudiandae tempore.",
   },
   {
-    id: "1",
-    q: "Apa Itu Rate Convert Pulsa?",
-    a: "",
+    question: "Frequently asked questions 2",
+    answer:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem eaque totam natus excepturi repudiandae tempore.",
+  },
+  {
+    question: "Frequently asked questions 3",
+    answer:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem eaque totam natus excepturi repudiandae tempore.",
+  },
+  {
+    question: "Frequently asked questions 4",
+    answer:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem eaque totam natus excepturi repudiandae tempore.",
+  },
+  {
+    question: "Frequently asked questions 5",
+    answer:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem eaque totam natus excepturi repudiandae tempore.",
+  },
+  {
+    question: "Frequently asked questions 6",
+    answer:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem eaque totam natus excepturi repudiandae tempore.",
   },
 ];
 
