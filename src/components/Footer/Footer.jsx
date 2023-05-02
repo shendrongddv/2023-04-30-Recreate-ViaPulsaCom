@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="bg-neutral-100 px-6 pt-20 md:pt-28">
       <div className="mx-auto max-w-6xl space-y-10">
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="border">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
             optio atque blanditiis omnis hic voluptates voluptatum dolor porro
