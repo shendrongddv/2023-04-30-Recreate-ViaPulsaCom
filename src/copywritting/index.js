@@ -23,6 +23,73 @@ import xl from "../assets/isp/xl.png";
 import indosat from "../assets/isp/indosat.png";
 import three from "../assets/isp/three.png";
 
+// Navigation Link
+export const usefulLink = [
+  {
+    title: "About Us",
+    url: "/",
+  },
+  {
+    title: "Privacy Policy",
+    url: "/",
+  },
+  {
+    title: "Help",
+    url: "/",
+  },
+];
+
+export const tutorialConvertLink = [
+  {
+    title: "Convert Pulsa ke DANA",
+    url: "/",
+  },
+  {
+    title: "Convert Pulsa ke OVO",
+    url: "/",
+  },
+  {
+    title: "Convert Pulsa ke GoPay",
+    url: "/",
+  },
+  {
+    title: "Convert Pulsa ke ShopeePay",
+    url: "/",
+  },
+  {
+    title: "Convert Pulsa ke LinkAja",
+    url: "/",
+  },
+];
+
+export const socialMediaLink = [
+  {
+    title: "TikTok",
+    url: "/",
+    icon: "FaTiktok",
+  },
+  {
+    title: "Instagram",
+    url: "/",
+    icon: "RiInstagramFill",
+  },
+  {
+    title: "YouTube",
+    url: "/",
+    icon: "FaYoutube",
+  },
+  {
+    title: "LinkedIn",
+    url: "/",
+    icon: "FaLinkedinIn",
+  },
+  {
+    title: "Facebook",
+    url: "/",
+    icon: "FaFacebookF",
+  },
+];
+
 export const whyChooseUs = [
   {
     id: "1",
