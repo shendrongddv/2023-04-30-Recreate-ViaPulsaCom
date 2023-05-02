@@ -5,7 +5,7 @@ const FAQ = () => {
     <div className="border-b px-6 py-20 md:py-28">
       <div className="mx-auto flex max-w-6xl flex-col items-center">
         <h2 className="w-full text-center font-bold text-[#333333] md:w-1/2">
-          FAQ
+          FAQS
         </h2>
       </div>
     </div>
